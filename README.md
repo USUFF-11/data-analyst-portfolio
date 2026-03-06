@@ -32,7 +32,6 @@ Developed an interactive dashboard to analyze retail sales performance including
 
 Tools: Power BI, DAX, Data Modeling
 
-![Retail Sales Dashboard](powerbi_dashboard.png)
 
 ---
 
