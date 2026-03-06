@@ -56,6 +56,7 @@ Tools: Python, Selenium, BeautifulSoup
 Developed a machine learning model to predict football player market value using historical performance data.
 
 Tools: Python, Scikit-learn, Pandas
+
 ---
 
 ## Contact
