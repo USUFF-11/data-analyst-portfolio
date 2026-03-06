@@ -1,9 +1,7 @@
 # Youssef Adel Abdelhamid
 ### Data Analyst | Machine Learning | Web Scraping
 
-Welcome to my Data Analytics Portfolio.
-
-I am a Data Analyst with experience in Python, SQL, Excel, Power BI, and Machine Learning. I specialize in extracting insights from data and building automation tools using Python.
+Junior Data Analyst skilled in transforming raw data into actionable insights using Python, SQL, Excel, and Power BI.
 
 ---
 
@@ -19,43 +17,54 @@ I am a Data Analyst with experience in Python, SQL, Excel, Power BI, and Machine
 
 ---
 
+## Tools & Technologies
+
+Python | Pandas | NumPy | Scikit-learn  
+SQL | Excel | Power BI | Selenium | BeautifulSoup  
+
+---
+
 ## Projects
 
 ### Retail Sales Dashboard (Power BI)
-Developed an interactive Power BI dashboard to analyze retail sales performance.  
-The dashboard includes KPIs such as total sales, total orders, total quantity, and average order value.  
-It also provides visual insights into sales by department and weekly sales trends using interactive filters.
 
-Tools: Power BI, Data Modeling, DAX
+Developed an interactive dashboard to analyze retail sales performance including KPIs such as total sales, total orders, and average order value.
+
+Tools: Power BI, DAX, Data Modeling
+
+![Retail Sales Dashboard](powerbi_dashboard.png)
 
 ---
 
 ### Excel Sales Analysis Dashboard
-Created an Excel dashboard to analyze sales performance using pivot tables and charts.  
-The dashboard tracks revenue, product performance, and sales trends to help identify business insights.
 
-Tools: Excel, Pivot Tables, Charts, Data Cleaning
+Built an Excel dashboard using pivot tables and charts to analyze sales trends and product performance.
+
+Tools: Excel, Pivot Tables, Data Cleaning
 
 ---
 
 ### Manufacturing Downtime Analysis
-Analyzed production downtime data using SQL and Python to identify performance bottlenecks and operational inefficiencies.
 
-Tools: SQL, Python, Data Analysis
+Analyzed manufacturing downtime data to identify operational inefficiencies and production delays.
+
+Tools: SQL, Python
 
 ---
 
 ### Real Estate Web Scraping
-Built a web scraping system using Selenium and BeautifulSoup to collect real estate property data from websites for analysis.
+
+Built a web scraping system using Selenium and BeautifulSoup to collect real estate data from online listings.
 
 Tools: Python, Selenium, BeautifulSoup
 
 ---
 
 ### Football Player Value Prediction
-Developed a machine learning model to predict football player market value using historical performance data.
 
-Tools: Python, Scikit-learn, Pandas
+Developed a machine learning model to predict football player market value.
+
+Tools: Python, Scikit-learn
 
 ---
 
