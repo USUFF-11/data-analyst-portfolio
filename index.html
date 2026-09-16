@@ -192,62 +192,44 @@
       </p>
 
       <div class="cards">
-        <div class="card card-1">
-          <div class="card-overlay">
-            <h3>Sales Analysis Dashboard</h3>
-            <p>Power BI dashboard tracking KPIs and trends from cleaned Excel &amp; SQL data.</p>
-            <div class="card-links">
-              <a href="#" class="chip">Power BI</a><a href="#" class="chip">SQL</a><a href="#" class="chip">Excel</a>
+        <div class="card" data-gallery="images/projects/Steam/Screenshot 2026-04-02 072236.png,images/projects/Steam/Screenshot 2026-04-02 072311.png,images/projects/Steam/Screenshot 2026-04-02 073119.png,images/projects/Steam/Screenshot 2026-04-02 073135.png">
+          <div class="card-bg steam-bg"></div>
+          <div class="card-content">
+            <button type="button" class="chip gallery-trigger view-top">View Gallery</button>
+            <div class="card-body">
+              <h3>Freelance Data Services — Steam Insights</h3>
+              <p>Web scraping, automation, cleaning, EDA, and dashboards turning Steam data into actionable insights.</p>
+              <div class="card-links">
+                <a href="#" class="chip">Python</a><a href="#" class="chip">Selenium</a><a href="#" class="chip">Pandas</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card card-2">
-          <div class="card-overlay">
-            <h3>Web Scraping &amp; Data Prep</h3>
-            <p>Automated scraping of dynamic web data with Python, Selenium &amp; BeautifulSoup.</p>
-            <div class="card-links">
-              <a href="#" class="chip">Python</a><a href="#" class="chip">Selenium</a><a href="#" class="chip">BeautifulSoup</a>
+        <div class="card" data-gallery="images/projects/Retail Sales Dashboard/1772817739772.jpg">
+          <div class="card-bg retail-bg"></div>
+          <div class="card-content">
+            <button type="button" class="chip gallery-trigger view-top">View Dashboard</button>
+            <div class="card-body">
+              <h3>Retail Sales Dashboard (Power BI)</h3>
+              <p>Sales performance &amp; KPIs built with SQL + Power BI — Star Schema data model, DAX measures, and ETL in Power Query.</p>
+              <div class="card-links">
+                <a href="#" class="chip">SQL</a><a href="#" class="chip">Power BI</a><a href="#" class="chip">DAX</a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="card card-3">
-          <div class="card-overlay">
-            <h3>SQL Data Analysis</h3>
-            <p>Complex SQL queries for customer &amp; order insights to support decisions.</p>
-            <div class="card-links">
-              <a href="#" class="chip">SQL</a><a href="#" class="chip">Data Exploration</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card card-4">
-          <div class="card-overlay">
-            <h3>Manufacturing Downtime Analysis</h3>
-            <p>Identified operational inefficiencies and production delays.</p>
-            <div class="card-links">
-              <a href="#" class="chip">SQL</a><a href="#" class="chip">Python</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card card-5">
-          <div class="card-overlay">
-            <h3>Real Estate Web Scraping</h3>
-            <p>Collected real estate listings data using Selenium &amp; BeautifulSoup.</p>
-            <div class="card-links">
-              <a href="#" class="chip">Python</a><a href="#" class="chip">Selenium</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card card-6">
-          <div class="card-overlay">
-            <h3>Football Player Value Prediction</h3>
-            <p>ML model predicting football player market value.</p>
-            <div class="card-links">
-              <a href="#" class="chip">Python</a><a href="#" class="chip">Scikit-learn</a>
+        <div class="card" data-gallery="images/projects/Excel Dashboard/1.jpg,images/projects/Excel Dashboard/2.jpg,images/projects/Excel Dashboard/3.jpg">
+          <div class="card-bg excel-bg"></div>
+          <div class="card-content">
+            <button type="button" class="chip gallery-trigger view-top">View Dashboards</button>
+            <div class="card-body">
+              <h3>Excel Dashboard Projects</h3>
+              <p>Four interactive dashboards — Road Traffic Accidents, Loan Performance &amp; Risk, Call Center, and HR Attrition Analytics — all built with pivot tables, slicers, and KPIs.</p>
+              <div class="card-links">
+                <a href="#" class="chip">Excel</a><a href="#" class="chip">Pivot Tables</a><a href="#" class="chip">Dashboards</a>
+              </div>
             </div>
           </div>
         </div>
@@ -269,7 +251,7 @@
             Python for Data Science, Data Visualization, Machine Learning, SQL,
             MLOps (MLflow, Hugging Face), Prompt Engineering, Capstone Project.
           </p>
-          <a class="btn btn-primary btn-small" href="images/certificates/DataScienceCertificate.pdf" target="_blank">View Certificate</a>
+          <button type="button" class="btn btn-primary btn-small cert-trigger" data-src="images/certificates/Data Science.png">View Certificate</button>
         </div>
 
         <div class="cert-card">
@@ -290,7 +272,7 @@
             for Data Analysis, Power BI Dashboards, Statistics. Currently learning
             Tableau &amp; Apache Airflow.
           </p>
-          <a class="btn btn-primary btn-small" href="images/certificates/YoussefRouteCertificate.pdf" target="_blank">View Certificate</a>
+          <button type="button" class="btn btn-primary btn-small cert-trigger" data-src="images/certificates/Route.png">View Certificate</button>
         </div>
 
         <div class="cert-card">
@@ -300,7 +282,7 @@
             Operations department internship certificate — banking operations
             experience and exposure to operational risk management.
           </p>
-          <a class="btn btn-primary btn-small" href="images/certificates/AAIB.png" target="_blank">View Certificate</a>
+          <button type="button" class="btn btn-primary btn-small cert-trigger" data-src="images/certificates/AAIB.png">View Certificate</button>
         </div>
       </div>
     </div>
@@ -375,6 +357,15 @@
       </div>
     </div>
   </section>
+
+  <!-- Lightbox Gallery -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">&#10094;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Project screenshot">
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next">&#10095;</button>
+    <span class="lightbox-counter" id="lightboxCounter"></span>
+  </div>
 
   <footer>
     <div class="container footer-inner">

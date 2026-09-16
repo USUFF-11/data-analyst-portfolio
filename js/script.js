@@ -64,6 +64,72 @@ revealElements.forEach((el) => {
   revealObserver.observe(el);
 });
 
+// Certificate lightbox trigger (single image, reuses lightbox)
+document.querySelectorAll('.cert-trigger').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    galleryImages = [btn.getAttribute('data-src')];
+    currentIndex = 0;
+    openLightbox();
+  });
+});
+
+// Project gallery lightbox
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxCounter = document.getElementById('lightboxCounter');
+let galleryImages = [];
+let currentIndex = 0;
+
+document.querySelectorAll('.gallery-trigger').forEach((trigger) => {
+  trigger.addEventListener('click', (e) => {
+    e.preventDefault();
+    const card = trigger.closest('.card');
+    galleryImages = card
+      .getAttribute('data-gallery')
+      .split(',')
+      .map((s) => s.trim());
+    currentIndex = 0;
+    openLightbox();
+  });
+});
+
+function openLightbox() {
+  lightboxImg.src = galleryImages[currentIndex];
+  updateCounter();
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function updateCounter() {
+  lightboxCounter.textContent = `${currentIndex + 1} / ${galleryImages.length}`;
+}
+
+function showImage(dir) {
+  currentIndex = (currentIndex + dir + galleryImages.length) % galleryImages.length;
+  lightboxImg.src = galleryImages[currentIndex];
+  updateCounter();
+}
+
+document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+document.getElementById('lightboxPrev').addEventListener('click', () => showImage(-1));
+document.getElementById('lightboxNext').addEventListener('click', () => showImage(1));
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+
+document.addEventListener('keydown', (e) => {
+  if (!lightbox.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') showImage(-1);
+  if (e.key === 'ArrowRight') showImage(1);
+});
+
 // Contact form — sends submissions to Formspree
 const contactForm = document.getElementById('contactForm');
 contactForm.addEventListener('submit', async (e) => {
