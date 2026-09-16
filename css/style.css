@@ -509,7 +509,7 @@ a {
 /* ============ CERTIFICATES ============ */
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
 }
 
@@ -540,6 +540,26 @@ a {
 .cert-card p {
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.btn-small {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 9px 22px;
+  font-size: 0.8rem;
+}
+
+.pending-tag {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  border-radius: 20px;
 }
 
 /* ============ SERVICES ============ */
